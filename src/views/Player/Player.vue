@@ -43,7 +43,7 @@ onMounted(() => {
     <img
       :src="back_arrow_icon"
       alt=""
-      @click="router.push('/')"
+      @click="router.push('/home')"
     />
 
     <!-- video player -->

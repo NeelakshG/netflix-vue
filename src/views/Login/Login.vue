@@ -1,32 +1,48 @@
 <script setup>
-import { ref } from "vue";
+import { ref, watch } from "vue";
+import { login, signup } from "@/firebase";
 import logo from "@/assets/logo.png";
+import { useRouter } from "vue-router";
 
+// state
 const signState = ref("Sign In");
 const name = ref("");
 const email = ref("");
 const password = ref("");
+const router = useRouter();
 
-const user_auth = async (event) => {
-  event.preventDefault();
+// clear fields when switching modes
+watch(signState, () => {
+  name.value = "";
+  email.value = "";
+  password.value = "";
+});
 
-  if (signState.value === "Sign In") {
-    await login(email.value, password.value);
-  } else {
-    await signup(name.value, email.value, password.value);
+// auth handler
+const handleAuth = async () => {
+  try {
+    if (signState.value === "Sign In") {
+      await login(email.value, password.value);
+    } else {
+      await signup(email.value, password.value);
+    }
+    router.push("/home");
+  } catch (err) {
+    alert(err.message);
   }
 };
+
 </script>
 
 <template>
   <div class="login">
-    <img :src="logo" alt="" class="login-logo" />
+    <img :src="logo" alt="Netflix Logo" class="login-logo" />
 
     <div class="login-form">
       <h1>{{ signState }}</h1>
 
-      <form @submit="user_auth">
-        <!-- Name field (Sign Up only) -->
+      <form @submit.prevent="handleAuth">
+        <!-- Name only for Sign Up -->
         <input
           v-if="signState === 'Sign Up'"
           v-model="name"
@@ -62,17 +78,18 @@ const user_auth = async (event) => {
       <div class="form-switch">
         <p v-if="signState === 'Sign In'">
           New to Netflix?
-          <span @click="signState = 'Sign Up'">Sign up Now</span>
+          <span @click="signState = 'Sign Up'">Sign up now</span>
         </p>
 
         <p v-else>
           Already have an account?
-          <span @click="signState = 'Sign In'">Sign In Now</span>
+          <span @click="signState = 'Sign In'">Sign in now</span>
         </p>
       </div>
     </div>
   </div>
 </template>
+
 
 <style scoped>
 .login {

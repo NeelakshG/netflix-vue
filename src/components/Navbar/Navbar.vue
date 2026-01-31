@@ -4,6 +4,20 @@ import search_icon from "@/assets/search_icon.svg";
 import bell_icon from "@/assets/bell_icon.svg";
 import profile_img from "@/assets/profile_img.png";
 import caret_icon from "@/assets/caret_icon.svg";
+import { useRouter } from "vue-router";
+import { logout } from "@/firebase";
+
+const router = useRouter();
+
+const handleLogout = async () => {
+  try {
+    await logout();
+    router.push("/login"); 
+  } catch (err) {
+    alert(err.message);
+  }
+};
+
 
 // UI for the navbar, separated into two sections: right side and left side
 </script>
@@ -32,7 +46,7 @@ import caret_icon from "@/assets/caret_icon.svg";
         <img :src="caret_icon" />
 
         <div class="dropdown">
-          <p @click="logout">
+          <p @click="handleLogout">
             Sign out of Netflix
           </p>
         </div>
