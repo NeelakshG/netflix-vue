@@ -1,6 +1,7 @@
 // Firebase core
 import { initializeApp } from "firebase/app";
 
+
 // Firebase auth
 import {
   getAuth,
@@ -34,5 +35,6 @@ export const signup = (email, password) =>
   createUserWithEmailAndPassword(auth, email, password);
 
 export const logout = () => signOut(auth);
+
 
 export { auth };
