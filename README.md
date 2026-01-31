@@ -1,40 +1,34 @@
-🎬 Netflix Clone (Vue)
+# 🎬 Netflix Clone
 
-A fully responsive Netflix-inspired movie streaming frontend built with Vue 3 and Vite, designed to replicate the core UI and browsing experience of Netflix. The project focuses on clean component architecture, responsive layouts, and API-driven content rendering.
+A fully responsive Netflix-inspired movie streaming frontend built with Vue 3, styled using CSS, and powered by Vite for fast development and builds.
 
-🔥 Features
 
-🎞️ Browse popular, trending, and categorized movies
+--------------------------------------------------
 
-🔍 Search and filter movies
+# 🔥 Features
 
-🎬 Interactive hover effects and animations
+- Movie data fetched from The Movie Database (TMDb): https://www.themoviedb.org/
+- Movie search and filtering
+- Hover animations and trailers
+- Mobile-friendly layout
 
-📱 Fully responsive design (desktop, tablet, mobile)
 
-⚡ Fast development and builds powered by Vite
+--------------------------------------------------
 
-Authentication and advanced features may be added in future iterations.
+# 🚀 Tech Stack
 
-🚀 Tech Stack
+- **Frontend**: Vue 3, Vite
+- **Styling**: CSS
+- **API**: TMDb API (https://developers.themoviedb.org/3)
+- **Deployment**: GitHub Pages / Netlify / Vercel
+- **Backend / Auth / DB**: Firebase (Authentication + Firestore) (planned)
 
-Frontend: Vue 3, Vite
 
-Styling: CSS (or TailwindCSS, if you plan to add it)
+--------------------------------------------------
 
-Routing: Vue Router 
+## 📦 Installation
 
-API: The Movie Database (TMDb)
-
-Deployment: GitHub Pages / Netlify / Vercel
-
-📦 Installation & Setup
+```bash
 # 1. Clone the repository
-git clone https://github.com/NeelakshG/netflix-clone-vue.git
-cd netflix-clone-vue
-
-# 2. Install dependencies
-npm install
-
-# 3. Start the development server
-npm run dev
+git clone https://github.com/your-username/netflix-vue.git
+cd netflix-vue
