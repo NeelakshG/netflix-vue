@@ -30,7 +30,7 @@ Deployment: GitHub Pages / Netlify / Vercel
 
 📦 Installation & Setup
 # 1. Clone the repository
-git clone https://github.com/your-username/netflix-clone-vue.git
+git clone https://github.com/NeelakshG/netflix-clone-vue.git
 cd netflix-clone-vue
 
 # 2. Install dependencies
