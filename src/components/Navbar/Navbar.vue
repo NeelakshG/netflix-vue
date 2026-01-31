@@ -18,6 +18,7 @@ const handleLogout = async () => {
   }
 };
 
+
 // UI for the navbar, separated into two sections: right side and left side
 </script>
 
