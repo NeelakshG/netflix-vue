@@ -32,3 +32,5 @@ A fully responsive Netflix-inspired movie streaming frontend built with Vue 3, s
 # 1. Clone the repository
 git clone https://github.com/your-username/netflix-vue.git
 cd netflix-vue
+npm run install
+npm run dev
