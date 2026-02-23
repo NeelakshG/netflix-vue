@@ -1,11 +1,11 @@
-# 🎬 Netflix Clone
+# Netflix Clone
 
 A fully responsive Netflix-inspired movie streaming frontend built with Vue 3, styled using CSS, and powered by Vite for fast development and builds.
 
 
 --------------------------------------------------
 
-# 🔥 Features
+#  Features
 
 - Movie data fetched from The Movie Database (TMDb): https://www.themoviedb.org/
 - Movie search and filtering
@@ -15,7 +15,7 @@ A fully responsive Netflix-inspired movie streaming frontend built with Vue 3, s
 
 --------------------------------------------------
 
-# 🚀 Tech Stack
+#  Tech Stack
 
 - **Frontend**: Vue 3, Vite
 - **Styling**: CSS
@@ -26,7 +26,7 @@ A fully responsive Netflix-inspired movie streaming frontend built with Vue 3, s
 
 --------------------------------------------------
 
-## 📦 Installation
+##  Installation
 
 ```bash
 # 1. Clone the repository
