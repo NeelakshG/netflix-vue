@@ -1,36 +1,52 @@
-# Netflix Clone
+Netflix Clone
 
-A fully responsive Netflix-inspired movie streaming frontend built with Vue 3, styled using CSS, and powered by Vite for fast development and builds.
+A full-stack Netflix-inspired movie streaming platform built with React and powered by a custom Express.js + PostgreSQL backend for secure authentication and persistent data management. The application is deployed using Firebase.
 
+Overview
 
---------------------------------------------------
+This project replicates core Netflix functionality, including browsing movies, searching content, authentication, and personalized watchlists. It integrates a custom backend API with secure JWT authentication and a relational database designed for scalability and performance.
 
-#  Features
+Features
 
-- Movie data fetched from The Movie Database (TMDb): https://www.themoviedb.org/
-- Movie search and filtering
-- Hover animations and trailers
-- Mobile-friendly layout
+Browse 100+ movies dynamically fetched from TMDB
 
+Movie search and filtering
 
---------------------------------------------------
+Hover animations and trailer previews
 
-#  Tech Stack
+Fully responsive design
 
-- **Frontend**: Vue 3, Vite
-- **Styling**: CSS
-- **API**: TMDb API (https://developers.themoviedb.org/3)
-- **Deployment**: GitHub Pages / Netlify / Vercel
-- **Backend / Auth / DB**: Firebase (Authentication + Firestore) (planned)
+User authentication using JSON Web Tokens (JWT)
 
+Persistent user watchlists stored in PostgreSQL
 
---------------------------------------------------
+Protected routes and secure session handling
 
-##  Installation
+RESTful API with average response times under 300ms
 
-```bash
-# 1. Clone the repository
-git clone https://github.com/your-username/netflix-vue.git
-cd netflix-vue
-npm run install
-npm run dev
+Tech Stack
+Frontend
+
+React
+
+Vite
+
+CSS
+
+Backend
+
+Express.js
+
+PostgreSQL
+
+Prisma ORM
+
+JSON Web Tokens (JWT)
+
+External API
+
+TMDB API
+
+Deployment
+
+Firebase
